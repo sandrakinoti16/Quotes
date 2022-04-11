@@ -24,7 +24,7 @@ export class QuotesComponent implements OnInit {
   addedQuote(quote: Quote){
     let arraysize = this.quotes.length;
     quote.id = arraysize+1;
-    quote.completeDate = new Date(quote.completeDate)
+    quote.completeDate = new Date(quote.completeDate!)
     this.quotes.push(quote)
   }
   quoteDelete(isRead: any, index: number){
@@ -37,7 +37,7 @@ export class QuotesComponent implements OnInit {
     }
   }
  
-  displayInfo(index: string | number){
+  displayInfo(index:any){
     this.quotes[index].showInfo = !this.quotes[index].showInfo;
   }
   constructor() { }

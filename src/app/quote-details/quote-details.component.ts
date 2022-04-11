@@ -7,9 +7,9 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  @Input() quoty: Quote | undefined;
+  @Input() quoty!: Quote ;
   @Output() isRead = new EventEmitter<boolean>();
-  quotes: any;
+  quotes!: Quote;
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
