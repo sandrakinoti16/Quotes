@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuotesFormComponent } from './quotes-form.component';
+import { QuotesFormComponent } from './quotes-form.components';
+// import { QuotesFormComponent } from './quotes-form.component';
 
 describe('QuotesFormComponent', () => {
   let component: QuotesFormComponent;
